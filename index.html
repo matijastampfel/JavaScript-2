@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+    <title>Book API</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script src="./script.js">  </script>
+
+<!--Google fonts /////////////////////////////////////////////////////////////////////-->
+
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+<!--//////////////////////////////////////////////////////////////////////////-->
+
+    <!--Bootstrap link///////////////////////////////////////////////////////////////////-->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+
+    <!--///////////////////////////////////////////////////////////////////////////////////-->
+ 
+
+
+</head>
+<body>
+
+
+     <!-- Request Api -->
+
+    <h3 class="titleh" >Api Key</h3>
+    <div id="apikey">
+
+        <button class="button" id="apiB" onclick="loadDoc()"> Request API key </button>
+        <p id="recApi"> API key :</p>  
+        <div id="apiKD">
+        </div>
+
+    </div>
+
+    <!--//////////////////////////////////////////////////////// -->
+
+    <!-- Add book -->
+
+    <h3 class="titleh"> Add book </h3>
+
+    <div id=addBook>
+
+        <button class="button" id="addB" onclick="AddBook()"> Add Book </button>
+        <label for="">Title</label>
+        <input id="titleA" type="text">
+        <label for="">Author</label>
+        <input id="autorA" type="text">
+    </div>
+
+    <!-- ///////////////////////////////////////////////////////// -->
+
+    <!-- View books-->
+
+    <h3 class="titleh"> Books in library </h3>
+
+    <div id=bookLib>
+
+        <button class="button" id="viewB" onclick="loadBook()"> View books</button>
+
+        <div id="showBookD">
+      
+
+        </div>
+
+         <div id="showBookID"></div>
+    </div>
+
+
+
+
+    <!--////////////////////////////////////////////////////////////-->
+
+
+    <!--Change Book ///////////////////////////////////////////////////////////-->
+
+
+    <h3 class="titleh">Change Book</h3>
+
+    <div id="changeBook">
+
+         
+
+        <label for="bookID">Book ID:<input id="bookID" type="text"></label> 
+        <label for="AuthorC">Author:<input id="AuthorC" type="text"></label>
+        <label for="bookName">Book Name:<input id="bookName" type="text"></label>
+        
+        <button class="button" id="changeB" onclick="change()">Change Book Data</button>
+
+
+
+    </div>
+
+
+
+
+    <!--////////////////////////////////////////////////////////////////////////////////////-->
+
+
+    <!--Delete Book /////////////////////////////////////////////////////////////////////-->
+
+
+    <h3 class="titleh">Delete Book</h3>
+
+    <div id="deleteBook">  
+
+   
+
+    <label for="removeBook"> ID of the Book: <input id="removeBook" type="text"> </label>
+    
+     <button class="button" id="deleteB" onclick="remove()">Delete Book</button>
+
+
+    
+    </div>
+
+
+
+    <!--////////////////////////////////////////////////////////////////////////////////-->
+
+</body>
+
+</html>
+

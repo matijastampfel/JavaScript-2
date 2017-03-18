@@ -1,0 +1,48 @@
+#apikey,
+#addBook,
+#bookLib,
+#changeBook,
+#deleteBook {
+    border: 1px solid black;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 5px;
+    background-color: yellow;
+}
+
+#showBookD {
+    background-color: darkgray;
+    margin: 5px;
+    padding: 200px;
+}
+
+#apiKD {
+    background-color: darkgray;
+    padding: 10px;
+}
+
+h3 {
+    text-align: center;
+}
+
+.titleh {
+    font-family: 'Lobster', cursive;
+}
+
+* {
+    font-family: 'Lobster', cursive;
+    
+}
+
+.button {
+background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
